@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registracijos forma</title>
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <form name="Registracijos forma" id="registracijosForma">
+      <fieldset>
+        <legend>Registracijos forma</legend>
+        <div>
+          <label for="name">Vardas: </label
+          ><input
+            id="vardas"
+            type="text"
+            placeholder="Įveskite vardą"
+            title="Įveskite vardą"
+          />
+        </div>
+        <div>
+          <label for="surname">Pavardė: </label
+          ><input
+            id="pavarde"
+            type="text"
+            placeholder="Įveskite pavardę"
+            title="Įveskite pavardę"
+          />
+        </div>
+        <div>
+          <label for="email">El. paštas: </label
+          ><input
+            id="email"
+            type="text"
+            placeholder="Įveskite el. pašto adresą"
+            title="Įveskite el. pašto adresą"
+          />
+        </div>
+        <div>
+          <label for="dateOfBirth">Įveskite gymimo datą: </label
+          ><input id="dateOfBirth" type="date" placeholder="mmmm-mm-dd" />
+        </div>
+        <section>
+          <div>
+            <label for="lytis">Vyras</label><input type="radio" name="state" />
+            <label for="lytis">Moteris</label
+            ><input type="radio" name="state" />
+            <label for="lytis">Nesakysiu</label
+            ><input type="radio" name="state" />
+          </div>
+        </section>
+        <fieldset>
+          <legend>Registracijos duomenys (slapta!!!)</legend>
+          <div>
+            <label for="userName" width="50%">Jūsų prisijungimo vardas: </label
+            ><input
+              id="prisijungimoVardas"
+              type="text"
+              placeholder="Įveskite prisijungimo vardą"
+              title="Įveskite prisijungimo vardą"
+            />
+          </div>
+          <div>
+            <label for="password">Jūsų prisijungimo vardas: </label
+            ><input
+              id="prisijungimoVardas"
+              type="password"
+              placeholder="Įveskite prisijungimo vardą"
+              title="Įveskite prisijungimo vardą"
+            />
+          </div>
+          <div>
+            <label for="personalCode"
+              >Įveskite 4 paskutinius asmens kodo skaičius: </label
+            ><input
+              maxlength="4"
+              id="asmensKodas"
+              type="text"
+              placeholder="1234"
+              title="Įveskite 4 paskutinius asmens kodo skaičius"
+            />
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Jūsų pomėgiai...</legend>
+          <section>
+            <p>Megstamiausi gėrimai</p>
+
+            <div>
+              <input type="checkbox" /><label>Vanduo</label>
+              <input type="checkbox" /><label>Pienas</label>
+              <input type="checkbox" /><label>Coca Cola</label>
+              <input type="checkbox" /><label>Pepsi Cola</label>
+              <input type="checkbox" /><label>Kava</label>
+            </div>
+          </section>
+          <p>Megstamiausias maistas</p>
+          <div>
+            <select>
+              <option disabled selected>Pasirinkite maistą...</option>
+              <option>Pasta</option>
+              <option>Piza</option>
+              <option>Burgeris</option>
+              <option>Sriuba</option>
+            </select>
+          </div>
+        </fieldset>
+        <div>
+          Jūsų atsiliepimas (max 150 simbolių)
+          <textarea
+            rows="10"
+            cols="45"
+            id="atsiliepimas"
+            placeholder="Jūsų atsiliepimas"
+            maxlength="150"
+          ></textarea>
+        </div>
+        <section>
+          <div>
+            <label>Su sąlygomis sutinku</label
+            ><input type="checkbox" required />
+          </div>
+        </section>
+        <div>
+          <input type="reset" value="Išvalyti duomenis" />
+          <input type="submit" value="Pateikti duomenis" />
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
